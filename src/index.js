@@ -19,10 +19,16 @@ account.deposit(100);
 //Withdraw
 account.withdraw(50);
 
+//
+console.log(`index...Balance: ${account.balance}`);
+
 
 //more transactions
 account.withdraw(20);
+account.removeObserver(logger.log);
 account.deposit(30);
+
+//we should see 4 emails and 3 log commands
 
 
 
